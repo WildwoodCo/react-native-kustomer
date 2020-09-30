@@ -33,12 +33,12 @@ RCT_EXPORT_METHOD(resetTracking)
     [Kustomer resetTracking];
   });
 }
-RCT_EXPORT_METHOD(identify:(NSString *) hash)
-{
-  dispatch_async(dispatch_get_main_queue(), ^{
-    [Kustomer identify:hash];
-  });
-}
+// RCT_EXPORT_METHOD(identify:(NSString *) callback:(void (^_Nullable)(BOOL success))cb)
+// {
+//   dispatch_async(dispatch_get_main_queue(), ^{
+//     [Kustomer identify:hash callback:cb];
+//   });
+// }
 RCT_EXPORT_METHOD(setCurrentPageName:(NSString *) pageName)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
