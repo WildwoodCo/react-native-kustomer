@@ -36,7 +36,7 @@ RCT_EXPORT_METHOD(resetTracking)
 RCT_EXPORT_METHOD(identify:(NSString *) hash)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [Kustomer identify:hash];
+    [Kustomer identify:hash callback: nil];
   });
 }
 RCT_EXPORT_METHOD(setCurrentPageName:(NSString *) pageName)
