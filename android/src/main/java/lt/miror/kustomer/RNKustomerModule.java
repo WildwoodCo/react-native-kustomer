@@ -47,7 +47,7 @@ public class RNKustomerModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void identify(String hash) {
-    Kustomer.identify(hash);
+    Kustomer.identify(hash, null);
   }
 
   @ReactMethod
